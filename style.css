@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 40px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: Roboto;
+  color: white;
+  background: rgba(159, 194, 209, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(159, 194, 209, 1) 0%,
+    rgba(166, 142, 215, 1) 33%,
+    rgba(97, 109, 176, 1) 68%,
+    rgba(34, 78, 140, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(159, 194, 209, 1)),
+    color-stop(33%, rgba(166, 142, 215, 1)),
+    color-stop(68%, rgba(97, 109, 176, 1)),
+    color-stop(100%, rgba(34, 78, 140, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(159, 194, 209, 1) 0%,
+    rgba(166, 142, 215, 1) 33%,
+    rgba(97, 109, 176, 1) 68%,
+    rgba(34, 78, 140, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(159, 194, 209, 1) 0%,
+    rgba(166, 142, 215, 1) 33%,
+    rgba(97, 109, 176, 1) 68%,
+    rgba(34, 78, 140, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(159, 194, 209, 1) 0%,
+    rgba(166, 142, 215, 1) 33%,
+    rgba(97, 109, 176, 1) 68%,
+    rgba(34, 78, 140, 1) 100%
+  );
+}
+
+.location,
+.temperature {
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+.temperature {
+  flex-direction: column;
+}
+.degree-section {
+  display: flex;
+  align-content: center;
+  cursor: pointer;
+}
+
+.degree-section span {
+  margin: 10px;
+  font-size: 30px;
+}
+
+.degree-section h2 {
+  font-size: 40px;
+}
+
+#degree-units {
+  margin-top: 20px;
+  display: flex;
+  font-size: 10px;
+  text-decoration: underline;
+}
