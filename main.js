@@ -21,7 +21,7 @@ window.addEventListener("load", () => {
         .then(data => {
           const { temperature, summary, icon } = data.currently;
           temperatureDescription.textContent = summary;
-          loactionTimezone.textContent = data.timezone;
+          loactionTimezone.textContent = `Timezone: ${data.timezone}`;
           temperatureDegree.textContent = Math.round(
             ((+temperature - 32) * 5) / 9
           );
